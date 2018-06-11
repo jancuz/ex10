@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MyLibrary;
 
 namespace ex10
 {
@@ -10,6 +7,15 @@ namespace ex10
     {
         static void Main(string[] args)
         {
+            const int MIN_SIZE = 2;
+            const int MAX_SIZE = 100;
+
+            int n = AskData.ReadIntNumber("Введите количество элементов поледовательности:", MIN_SIZE, MAX_SIZE);
+            List list = List.MakeList(n);
+            List.ShowList(list);
+
+            Console.WriteLine("Для завершения работы нажмите Enter");
+            Console.ReadLine();
         }
     }
 }
