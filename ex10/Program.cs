@@ -10,7 +10,7 @@ namespace ex10
             const int MIN_SIZE = 2;
             const int MAX_SIZE = 100;
 
-            int n = AskData.ReadIntNumber("Введите количество элементов поледовательности:", MIN_SIZE, MAX_SIZE);
+            int n = AskData.ReadIntNumber("Введите количество элементов поледовательности (от 2 до 100):", MIN_SIZE, MAX_SIZE);
             List list = List.MakeList(n);
             List.ShowList(list);
 
